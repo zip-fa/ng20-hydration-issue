@@ -2,6 +2,7 @@
 import type { Routes } from '@angular/router';
 
 import NotFoundComponent from './not-found.component';
+import BreweryComponent from './brewery';
 
 export const routes: Routes = [
   {
@@ -11,5 +12,9 @@ export const routes: Routes = [
   {
     path: 'non-lazy',
     component: NotFoundComponent
-  }
+  },
+  {
+    path: '**',
+    component: BreweryComponent
+  },
 ];
